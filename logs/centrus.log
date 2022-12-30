@@ -1,0 +1,383 @@
+2022-12-29 19:01:14.284 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 19:01:14.318 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 24 JPA repository interfaces.
+2022-12-29 19:01:14.361 [INFO ] [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-29 19:01:14.362 [INFO ] [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:01:14.362 [INFO ] [restartedMain] StandardService - Starting service [Tomcat]
+2022-12-29 19:01:14.362 [INFO ] [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-29 19:01:14.374 [INFO ] [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2022-12-29 19:01:14.374 [INFO ] [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 183 ms
+2022-12-29 19:01:14.387 [INFO ] [restartedMain] HikariDataSource - HikariPool-17 - Starting...
+2022-12-29 19:01:14.698 [INFO ] [restartedMain] HikariDataSource - HikariPool-17 - Start completed.
+2022-12-29 19:01:14.704 [INFO ] [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 19:01:14.710 [INFO ] [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2022-12-29 19:01:14.828 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.CallReject (class must be instantiated by Interceptor)
+2022-12-29 19:01:14.842 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.SettingsParameter (class must be instantiated by Interceptor)
+2022-12-29 19:01:14.853 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.AlarmProperties (class must be instantiated by Interceptor)
+2022-12-29 19:01:14.889 [INFO ] [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 19:01:14.889 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:01:15.077 [WARN ] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-29 19:01:15.219 [INFO ] [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-12-29 19:01:15.222 [INFO ] [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:01:15.224 [INFO ] [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29 19:01:15.226 [INFO ] [restartedMain] KktcellCentrusApplication - Started KktcellCentrusApplication in 1.057 seconds (JVM running for 6265.644)
+2022-12-29 19:01:15.226 [INFO ] [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-12-29 19:42:29.772 [INFO ] [restartedMain] KktcellCentrusApplication - Starting KktcellCentrusApplication using Java 17.0.1 on OS-UGUR with PID 24784 (C:\Users\Lenovo\eclipse-workspace\centrus\target\classes started by Lenovo in C:\Users\Lenovo\eclipse-workspace\centrus)
+2022-12-29 19:42:29.780 [INFO ] [restartedMain] KktcellCentrusApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-29 19:42:29.829 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-29 19:42:29.829 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-29 19:42:30.448 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 19:42:30.544 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 88 ms. Found 25 JPA repository interfaces.
+2022-12-29 19:42:31.225 [INFO ] [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-29 19:42:31.241 [INFO ] [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:42:31.242 [INFO ] [restartedMain] StandardService - Starting service [Tomcat]
+2022-12-29 19:42:31.242 [INFO ] [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-29 19:42:31.339 [INFO ] [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2022-12-29 19:42:31.339 [INFO ] [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1509 ms
+2022-12-29 19:42:31.475 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2022-12-29 19:42:32.111 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2022-12-29 19:42:32.168 [INFO ] [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 19:42:32.227 [INFO ] [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-29 19:42:32.390 [INFO ] [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 19:42:32.486 [INFO ] [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2022-12-29 19:42:33.061 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.CallReject (class must be instantiated by Interceptor)
+2022-12-29 19:42:33.165 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.SettingsParameter (class must be instantiated by Interceptor)
+2022-12-29 19:42:33.212 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.AlarmProperties (class must be instantiated by Interceptor)
+2022-12-29 19:42:33.350 [INFO ] [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 19:42:33.356 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:42:33.971 [WARN ] [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportControllers' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\controllers\CallBackReportControllers.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+2022-12-29 19:42:33.973 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:42:33.976 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-29 19:42:34.165 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-12-29 19:42:34.174 [INFO ] [restartedMain] StandardService - Stopping service [Tomcat]
+2022-12-29 19:42:34.212 [INFO ] [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 19:42:34.240 [ERROR] [restartedMain] SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportControllers' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\controllers\CallBackReportControllers.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.project.centrus.KktcellCentrusApplication.main(KktcellCentrusApplication.java:11) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:583) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:233) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:182) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:165) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:76) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:325) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+2022-12-29 19:43:06.005 [INFO ] [restartedMain] KktcellCentrusApplication - Starting KktcellCentrusApplication using Java 17.0.1 on OS-UGUR with PID 1072 (C:\Users\Lenovo\eclipse-workspace\centrus\target\classes started by Lenovo in C:\Users\Lenovo\eclipse-workspace\centrus)
+2022-12-29 19:43:06.014 [INFO ] [restartedMain] KktcellCentrusApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-29 19:43:06.061 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-29 19:43:06.061 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-29 19:43:06.709 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 19:43:06.817 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 25 JPA repository interfaces.
+2022-12-29 19:43:07.478 [INFO ] [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-29 19:43:07.494 [INFO ] [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:43:07.495 [INFO ] [restartedMain] StandardService - Starting service [Tomcat]
+2022-12-29 19:43:07.495 [INFO ] [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-29 19:43:07.579 [INFO ] [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2022-12-29 19:43:07.579 [INFO ] [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1517 ms
+2022-12-29 19:43:07.718 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2022-12-29 19:43:08.389 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2022-12-29 19:43:08.439 [INFO ] [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 19:43:08.491 [INFO ] [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-29 19:43:08.639 [INFO ] [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 19:43:08.731 [INFO ] [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2022-12-29 19:43:09.266 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.CallReject (class must be instantiated by Interceptor)
+2022-12-29 19:43:09.390 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.SettingsParameter (class must be instantiated by Interceptor)
+2022-12-29 19:43:09.434 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.AlarmProperties (class must be instantiated by Interceptor)
+2022-12-29 19:43:09.570 [INFO ] [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 19:43:09.576 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:43:10.197 [WARN ] [restartedMain] AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportControllers' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\controllers\CallBackReportControllers.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+2022-12-29 19:43:10.200 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:43:10.203 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-29 19:43:10.370 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-12-29 19:43:10.373 [INFO ] [restartedMain] StandardService - Stopping service [Tomcat]
+2022-12-29 19:43:10.384 [INFO ] [restartedMain] ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-29 19:43:10.398 [ERROR] [restartedMain] SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportControllers' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\controllers\CallBackReportControllers.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.5.jar:2.7.5]
+	at com.project.centrus.KktcellCentrusApplication.main(KktcellCentrusApplication.java:11) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.5.jar:2.7.5]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'callBackReportServices' defined in file [C:\Users\Lenovo\eclipse-workspace\centrus\target\classes\com\project\centrus\services\CallBackReportServices.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ICallBackReport' defined in com.project.centrus.repos.ICallBackReport defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.project.centrus.entities.CallBackReport
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:583) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85) ~[hibernate-core-5.6.12.Final.jar:5.6.12.Final]
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:233) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:182) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:165) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:76) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:325) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.util.Lazy.get(Lazy.java:115) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329) ~[spring-data-commons-2.7.5.jar:2.7.5]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144) ~[spring-data-jpa-2.7.5.jar:2.7.5]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.23.jar:5.3.23]
+	... 24 more
+2022-12-29 19:43:22.666 [INFO ] [restartedMain] KktcellCentrusApplication - Starting KktcellCentrusApplication using Java 17.0.1 on OS-UGUR with PID 34856 (C:\Users\Lenovo\eclipse-workspace\centrus\target\classes started by Lenovo in C:\Users\Lenovo\eclipse-workspace\centrus)
+2022-12-29 19:43:22.674 [INFO ] [restartedMain] KktcellCentrusApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-29 19:43:22.716 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-29 19:43:22.716 [INFO ] [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-29 19:43:23.336 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 19:43:23.439 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 25 JPA repository interfaces.
+2022-12-29 19:43:24.087 [INFO ] [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-29 19:43:24.102 [INFO ] [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:43:24.103 [INFO ] [restartedMain] StandardService - Starting service [Tomcat]
+2022-12-29 19:43:24.103 [INFO ] [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-29 19:43:24.190 [INFO ] [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2022-12-29 19:43:24.190 [INFO ] [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1474 ms
+2022-12-29 19:43:24.330 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+2022-12-29 19:43:24.982 [INFO ] [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+2022-12-29 19:43:25.028 [INFO ] [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 19:43:25.077 [INFO ] [restartedMain] Version - HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-29 19:43:25.222 [INFO ] [restartedMain] Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-29 19:43:25.313 [INFO ] [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2022-12-29 19:43:25.842 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.CallReject (class must be instantiated by Interceptor)
+2022-12-29 19:43:25.942 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.SettingsParameter (class must be instantiated by Interceptor)
+2022-12-29 19:43:25.983 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.AlarmProperties (class must be instantiated by Interceptor)
+2022-12-29 19:43:26.130 [INFO ] [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 19:43:26.137 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:43:27.122 [WARN ] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-29 19:43:27.832 [INFO ] [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-12-29 19:43:27.844 [INFO ] [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:43:27.869 [INFO ] [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29 19:43:27.878 [INFO ] [restartedMain] KktcellCentrusApplication - Started KktcellCentrusApplication in 5.466 seconds (JVM running for 6.225)
+2022-12-29 19:44:07.246 [INFO ] [http-nio-8080-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29 19:44:07.246 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-29 19:44:07.251 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 5 ms
+2022-12-29 19:44:42.084 [INFO ] [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-12-29 19:44:42.123 [INFO ] [Thread-5] Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:44:42.123 [INFO ] [Thread-5] StandardService - Stopping service [Tomcat]
+2022-12-29 19:44:42.124 [INFO ] [Thread-5] [/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-29 19:44:42.129 [INFO ] [Thread-5] Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:44:42.131 [INFO ] [Thread-5] Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:44:42.139 [INFO ] [Thread-5] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:44:42.143 [INFO ] [Thread-5] HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-12-29 19:44:42.146 [INFO ] [Thread-5] HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-12-29 19:44:42.239 [INFO ] [restartedMain] KktcellCentrusApplication - Starting KktcellCentrusApplication using Java 17.0.1 on OS-UGUR with PID 34856 (C:\Users\Lenovo\eclipse-workspace\centrus\target\classes started by Lenovo in C:\Users\Lenovo\eclipse-workspace\centrus)
+2022-12-29 19:44:42.240 [INFO ] [restartedMain] KktcellCentrusApplication - No active profile set, falling back to 1 default profile: "default"
+2022-12-29 19:44:42.431 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-29 19:44:42.479 [INFO ] [restartedMain] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 25 JPA repository interfaces.
+2022-12-29 19:44:42.577 [INFO ] [restartedMain] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-29 19:44:42.579 [INFO ] [restartedMain] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:44:42.579 [INFO ] [restartedMain] StandardService - Starting service [Tomcat]
+2022-12-29 19:44:42.579 [INFO ] [restartedMain] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-12-29 19:44:42.598 [INFO ] [restartedMain] [/] - Initializing Spring embedded WebApplicationContext
+2022-12-29 19:44:42.598 [INFO ] [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 355 ms
+2022-12-29 19:44:42.625 [INFO ] [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+2022-12-29 19:44:42.942 [INFO ] [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+2022-12-29 19:44:42.948 [INFO ] [restartedMain] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-29 19:44:42.953 [INFO ] [restartedMain] Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2022-12-29 19:44:43.103 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.CallReject (class must be instantiated by Interceptor)
+2022-12-29 19:44:43.155 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.SettingsParameter (class must be instantiated by Interceptor)
+2022-12-29 19:44:43.178 [INFO ] [restartedMain] PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.project.centrus.model.AlarmProperties (class must be instantiated by Interceptor)
+2022-12-29 19:44:43.256 [INFO ] [restartedMain] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-29 19:44:43.256 [INFO ] [restartedMain] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-29 19:44:43.644 [WARN ] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-29 19:44:43.994 [INFO ] [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-12-29 19:44:44.000 [INFO ] [restartedMain] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-12-29 19:44:44.003 [INFO ] [restartedMain] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-29 19:44:44.007 [INFO ] [restartedMain] KktcellCentrusApplication - Started KktcellCentrusApplication in 1.808 seconds (JVM running for 82.353)
+2022-12-29 19:44:44.008 [INFO ] [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-12-29 19:44:47.768 [INFO ] [http-nio-8080-exec-2] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-29 19:44:47.768 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-29 19:44:47.770 [INFO ] [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 2 ms
