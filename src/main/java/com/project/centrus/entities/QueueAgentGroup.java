@@ -18,7 +18,9 @@ public class QueueAgentGroup {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	Long qagid;
 	
+	@Column(name="QID")
 	Integer qid;
+	@Column(name="AGID")
 	Integer agid;
 	@Column(name="DISPATCH_ORDER")
 	Integer dispatchOrder;

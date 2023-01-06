@@ -3,27 +3,24 @@ package com.project.centrus.util;
 import java.util.List;
 
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Component;
+ 
 
-import lombok.Data;
+@Component
+public class CustomPage {
+	
+	public Page<Object> customPage(Object toData,Pageable pageable){
+	
+	@SuppressWarnings("unchecked")
+	List<Object> data = (List<Object>) toData;
+	
+	final int start = (int)pageable.getOffset();
+	final int end = Math.min((start + pageable.getPageSize()), data.size()); 
+	final Page<Object> page = new PageImpl<>(data.subList(start, end), pageable, data.size());
+   
+	return page;
 
-@Data
-public class CustomPage<T> {
-
-		private List<T> content;
-		private int pageNumber;
-		private int pageSize;
-		private Sort sort;
-		private int totalPages;
-		private long totalElements;
-		
-		public CustomPage(Page page,List<T> list) {
-			this.content = list;
-			this.pageNumber = page.getNumber();
-			this.pageSize = page.getNumber();
-			this.pageSize = page.getSize();
-			this.totalPages = page.getTotalPages();
-			this.totalElements = page.getTotalElements();
-			this.sort = page.getSort();
-		}
+	}
 }

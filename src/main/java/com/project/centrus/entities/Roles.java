@@ -2,24 +2,22 @@ package com.project.centrus.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Data;
 
-@Entity
 @Data
-@Table(name="LOCATION")
-public class Location {
-	
+@Entity
+@Table(name="ROLES")
+public class Roles {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="LOCATION_ID")
-	Long locationId;
+	@Column(name="ID")
+	Integer id;
+	
+	@Column(name="ROLE_ID")
+	Integer roleId;
 	
 	@Column(name="DESCRIPTION")
 	String description;
-
 }

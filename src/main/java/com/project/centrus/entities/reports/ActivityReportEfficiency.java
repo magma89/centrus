@@ -1,4 +1,4 @@
-package com.project.centrus.entities;
+package com.project.centrus.entities.reports;
  
 
 import javax.persistence.Column;

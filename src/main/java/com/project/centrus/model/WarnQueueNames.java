@@ -1,23 +1,21 @@
-package com.project.centrus.entities;
+package com.project.centrus.model;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.Entity; 
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Entity
-@Data
+@Data 
 @Table(name="WARN_SETTINGS")
-public class WarnSettings {
-	
+public class WarnQueueNames {
+
 	@Id
-	@Column(name="ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="ID") 
 	Long id;
 	
 	@Column(name="QID")
@@ -32,5 +30,6 @@ public class WarnSettings {
 	@Column(name="MIN_AR")
 	Integer minAr;
 	  
-
+	@Column(name="NAME")
+	String queueName;
 }

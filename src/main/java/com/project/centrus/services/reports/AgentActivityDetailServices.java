@@ -1,4 +1,4 @@
-package com.project.centrus.services;
+package com.project.centrus.services.reports;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.centrus.entities.ActivityReportDetail;
-import com.project.centrus.repos.IAgentActivityDetail;
+import com.project.centrus.entities.reports.ActivityReportDetail;
+import com.project.centrus.repos.reports.IAgentActivityDetail;
 import com.project.centrus.util.CustomPage;
 
 import jdk.internal.org.jline.utils.Log;
@@ -25,9 +25,11 @@ import lombok.extern.slf4j.Slf4j;
 public class AgentActivityDetailServices {
 
 	IAgentActivityDetail agentActivtyDetail;
+	CustomPage customPage;
 
-	public AgentActivityDetailServices(IAgentActivityDetail agentActivtyDetail) { 
+	public AgentActivityDetailServices(IAgentActivityDetail agentActivtyDetail,CustomPage customPage) { 
 		this.agentActivtyDetail = agentActivtyDetail;
+		this.customPage = customPage;
 	}
 	
 //	public Page<ActivityReportDetail> getDetailReport(Pageable pageable){
@@ -35,21 +37,24 @@ public class AgentActivityDetailServices {
 //	}
 
 
-public Page<ActivityReportDetail> getDetailReport(@RequestParam String startTime,@RequestParam String endTime,@RequestParam Long aid,Pageable pageable) {
+public Page<Object> getDetailReport(@RequestParam String startTime,@RequestParam String endTime,@RequestParam Long aid,Pageable pageable) {
 		
 		System.out.println(pageable);
 		List<ActivityReportDetail> data = agentActivtyDetail.getDetailReport(startTime,endTime,aid);
 		
-		final int start = (int)pageable.getOffset();
-		final int end = Math.min((start + pageable.getPageSize()), data.size());
-		log.info("Page Size :" + pageable.getPageSize());
-		log.info("Start :" + start);
-		log.info("End :" + end);
-		log.info("Data Size : " + data.size());
+//		final int start = (int)pageable.getOffset();
+//		final int end = Math.min((start + pageable.getPageSize()), data.size());
+//		log.info("Page Size :" + pageable.getPageSize());
+//		log.info("Start :" + start);
+//		log.info("End :" + end);
+//		log.info("Data Size : " + data.size());
+//		
+//		final Page<ActivityReportDetail> page = new PageImpl<>(data.subList(start, end), pageable, data.size());
+//	 
+//
+//		return page;
 		
-		final Page<ActivityReportDetail> page = new PageImpl<>(data.subList(start, end), pageable, data.size());
-	 
-
+		Page<Object> page = customPage.customPage(data, pageable);
 		return page;
 	}
 

@@ -1,19 +1,16 @@
-package com.project.centrus.entities;
+package com.project.centrus.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 
 import lombok.Data;
 
-@Entity
 @Data
-@Table(name="WARN_SETTINGS")
-public class WarnSettings {
+@Entity
+public class SettingsModel {
 	
 	@Id
 	@Column(name="ID")
@@ -31,6 +28,5 @@ public class WarnSettings {
 	
 	@Column(name="MIN_AR")
 	Integer minAr;
-	  
 
 }

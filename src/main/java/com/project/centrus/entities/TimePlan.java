@@ -21,6 +21,7 @@ public class TimePlan {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
+	@Column(name="TIME_PLAN_ID")
 	Long timePlanId;
 	
 	@Column(name="TIME_PLAN_NAME")

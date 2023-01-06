@@ -1,4 +1,4 @@
-package com.project.centrus.repos;
+package com.project.centrus.repos.reports;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.centrus.entities.ActivityReportEfficiency;
+import com.project.centrus.entities.reports.ActivityReportEfficiency;
 
 public interface IActivityReportEfficiency extends JpaRepository<ActivityReportEfficiency, String> {
 	

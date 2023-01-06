@@ -1,5 +1,7 @@
 package com.project.centrus.services;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 import org.springframework.http.HttpStatus;
@@ -52,6 +54,16 @@ public class AssignGroupQueueServices {
 		}else {
 			return new ResponseEntity<String>("The Agent Group not be deleted because it was not found !",HttpStatus.NOT_FOUND);
 		}
+	}
+	
+	public ResponseEntity<Object> createGroup(String message, HttpStatus status,@RequestBody QueueAgentGroup newGroup){	 
+		queueagentRepository.save(newGroup);
+		 Map<String, Object> map = new HashMap<String, Object>();
+            map.put("message", message);
+            map.put("status", status.value());
+            map.put("qagid", newGroup.getQagid());
+         return new ResponseEntity<Object>(map,status);
+		 
 	}
 
 }

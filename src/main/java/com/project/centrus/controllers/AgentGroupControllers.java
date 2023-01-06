@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.project.centrus.entities.AgentGroup;
 import com.project.centrus.entities.GroupMembers;
 import com.project.centrus.entities.SuspendReason;
+import com.project.centrus.model.AgentGroupNames;
 import com.project.centrus.model.Members;
 import com.project.centrus.services.AgentGroupServices;
 
@@ -46,6 +47,11 @@ public class AgentGroupControllers {
 	@GetMapping
 	public List<AgentGroup> getAllAgentGroup(){
 		return agentGroupServices.getAllGroupAgent();
+	}
+	
+	@GetMapping("/names")
+	public List<AgentGroupNames> getAllNames(){
+		return agentGroupServices.getAllGroupNames();
 	}
 	
 	@GetMapping("/members/{agid}")
@@ -95,5 +101,7 @@ public class AgentGroupControllers {
 	public ResponseEntity<Object> deleteSuspend(String message,@PathVariable Long suspendid){
 		return agentGroupServices.deleteSuspend(message,HttpStatus.OK,suspendid);
 	}
+	
+ 
 
 }

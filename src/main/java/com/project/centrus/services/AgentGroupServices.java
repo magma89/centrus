@@ -1,6 +1,7 @@
 package com.project.centrus.services;
 
  
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.project.centrus.entities.AgentGroup;
 import com.project.centrus.entities.GroupMembers;
 import com.project.centrus.entities.SuspendReason;
+import com.project.centrus.model.AgentGroupNames;
 import com.project.centrus.model.Members;
 import com.project.centrus.repos.IAgentGroupRepository;
 import com.project.centrus.repos.IGMRepository;
@@ -45,6 +47,16 @@ public class AgentGroupServices {
 	
 	public List<AgentGroup> getAllGroupAgent(){
 		return agentGroupRepository.getAllGroupAgent();
+		
+	}
+	
+	public List<AgentGroupNames> getAllGroupNames(){
+		List<AgentGroupNames> groupnames = new ArrayList<>();
+		List<AgentGroup> agnames = agentGroupRepository.getAllGroupAgent();
+		for (AgentGroup tempNames : agnames) {
+			groupnames.add(new AgentGroupNames(tempNames.getAGID(), tempNames.getDescription()));
+		}
+		return groupnames;
 		
 	}
 	
@@ -174,4 +186,6 @@ public class AgentGroupServices {
 			return new ResponseEntity<Object>(map,status);
 		}
 	}
+	
+ 
 }

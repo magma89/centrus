@@ -1,4 +1,4 @@
-package com.project.centrus.services;
+package com.project.centrus.services.reports;
 
  
 import java.text.DateFormat;
@@ -13,8 +13,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.centrus.entities.ActivityReportSummary;
-import com.project.centrus.repos.IActivityReportSummary;
+import com.project.centrus.entities.reports.ActivityReportSummary;
+import com.project.centrus.repos.reports.IActivityReportSummary;
 import com.project.centrus.util.DateFormatter;
 import com.project.centrus.util.LocalTimeFormatter;
 
@@ -44,7 +44,7 @@ public class ActivityReportSummaryServices {
 			temp.setTotalTalkDuration(timeFormatter.getConverter(temp.getTotalTalkDuration(), 0));
 			temp.setAverageIncomingTalkDuration(timeFormatter.getConverter(temp.getAverageIncomingTalkDuration(), 0));
 			temp.setYemek(timeFormatter.getConverter(temp.getYemek(), 0));
-			temp.setMusIslemleriAcw(timeFormatter.getConverter(temp.getMusIslemleriAcw(), 0));
+			temp.setMusIslemleriAcw(timeFormatter.getConverter(temp.getMusIslemleriAcw(), 0)); 
 			temp.setToplanti(timeFormatter.getConverter(temp.getToplanti(), 0));
 			temp.setDisArama(timeFormatter.getConverter(temp.getDisArama(), 0));
 			temp.setMoladaGiris(timeFormatter.getConverter(temp.getMoladaGiris(), 0));
@@ -52,7 +52,7 @@ public class ActivityReportSummaryServices {
 			temp.setDigitalKanallar(timeFormatter.getConverter(temp.getDigitalKanallar(), 0));
 			temp.setAverageOutgoingTalkDuration(timeFormatter.getConverter(temp.getAverageOutgoingTalkDuration(), 0));
 			temp.setAverageTalkDuration(timeFormatter.getConverter(temp.getAverageTalkDuration(), 0));
-			temp.setTotalFreeDuration(timeFormatter.getConverter(temp.getTotalFreeDuration(), 1));
+			temp.setTotalFreeDuration(timeFormatter.getConverter(temp.getTotalFreeDuration(), 1)); 
 			temp.setTotalIncomingWrapup(timeFormatter.getConverter(temp.getTotalIncomingWrapup(), 0));
 			temp.setTotalOutgoingWrapup(timeFormatter.getConverter(temp.getTotalOutgoingWrapup(), 0));
 			temp.setTotalIncomingRingDuration(timeFormatter.getConverter(temp.getTotalIncomingRingDuration(), 0));

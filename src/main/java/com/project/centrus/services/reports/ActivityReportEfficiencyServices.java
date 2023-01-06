@@ -1,4 +1,4 @@
-package com.project.centrus.services;
+package com.project.centrus.services.reports;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -19,8 +19,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.centrus.entities.ActivityReportEfficiency;
-import com.project.centrus.repos.IActivityReportEfficiency;
+import com.project.centrus.entities.reports.ActivityReportEfficiency;
+import com.project.centrus.repos.reports.IActivityReportEfficiency;
 import com.project.centrus.util.LocalTimeFormatter;
 
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.project.centrus.repos;
+package com.project.centrus.repos.reports;
 
 import java.util.List;
  
@@ -12,7 +12,7 @@ import org.springframework.data.jpa.repository.query.Procedure;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.centrus.entities.ActivityReportDetail;
+import com.project.centrus.entities.reports.ActivityReportDetail;
 import com.project.centrus.util.CustomPage;
 
 public interface IAgentActivityDetail extends JpaRepository<ActivityReportDetail, String> {

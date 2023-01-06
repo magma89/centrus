@@ -1,4 +1,4 @@
-package com.project.centrus.controllers;
+package com.project.centrus.controllers.reports;
 
 import java.util.List;
 
@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project.centrus.entities.ActivityReportDetail;
-import com.project.centrus.entities.ActivityReportEfficiency;
-import com.project.centrus.entities.ActivityReportSummary;
-import com.project.centrus.services.ActivityReportEfficiencyServices;
-import com.project.centrus.services.ActivityReportSummaryServices;
-import com.project.centrus.services.AgentActivityDetailServices;
+import com.project.centrus.entities.reports.ActivityReportDetail;
+import com.project.centrus.entities.reports.ActivityReportEfficiency;
+import com.project.centrus.entities.reports.ActivityReportSummary;
+import com.project.centrus.services.reports.ActivityReportEfficiencyServices;
+import com.project.centrus.services.reports.ActivityReportSummaryServices;
+import com.project.centrus.services.reports.AgentActivityDetailServices;
 import com.project.centrus.util.CustomPage;
 
 @CrossOrigin
@@ -40,7 +40,7 @@ public class AgentActivityControllers {
 	
 	@SuppressWarnings("unchecked")
 	@GetMapping("/detail")
-	public Page<ActivityReportDetail> getDetailReport(@RequestParam String startTime,@RequestParam String endTime,@RequestParam Long aid,Pageable pageable){
+	public Page<Object> getDetailReport(@RequestParam String startTime,@RequestParam String endTime,@RequestParam Long aid,Pageable pageable){
 		System.out.println(pageable.getOffset() + "offset");
 		System.out.println(pageable.getPageNumber() + "pageNumber");
 		System.out.println(pageable.getPageSize() + "pageSize");
