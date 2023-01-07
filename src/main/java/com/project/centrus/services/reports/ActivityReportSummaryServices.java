@@ -18,7 +18,6 @@ import com.project.centrus.repos.reports.IActivityReportSummary;
 import com.project.centrus.util.DateFormatter;
 import com.project.centrus.util.LocalTimeFormatter;
 
-import jdk.internal.org.jline.utils.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Service

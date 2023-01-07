@@ -17,7 +17,6 @@ import com.project.centrus.entities.reports.ActivityReportDetail;
 import com.project.centrus.repos.reports.IAgentActivityDetail;
 import com.project.centrus.util.CustomPage;
 
-import jdk.internal.org.jline.utils.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
