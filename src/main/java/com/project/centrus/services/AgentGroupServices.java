@@ -76,7 +76,8 @@ public class AgentGroupServices {
 			map.put("status", status.value());
 			map.put("deleteid", foundMembers.getAGID());
 			return new ResponseEntity<Object>(map,status);
-		}  else {
+		}  
+		else {
 			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("message", message);
 			map.put("status", status.value());
@@ -84,6 +85,40 @@ public class AgentGroupServices {
 			return new ResponseEntity<Object>(map,status);
 		}
 	}
+	
+	public ResponseEntity<Object> updateMembers(String message, HttpStatus status,@PathVariable Long gmid,@RequestBody GroupMembers updateMembers){
+		Optional<GroupMembers> members = groupRepository.findById(gmid);
+		if(members.isPresent()) {
+		GroupMembers foundMembers = members.get();
+		foundMembers.setAid(updateMembers.getAid());
+		foundMembers.setAgid(updateMembers.getAgid());
+		groupRepository.save(foundMembers);
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("message", message);
+		map.put("status", status.value());
+		map.put("updateid", gmid);
+		return new ResponseEntity<Object>(map,status);
+	    }
+		else {
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("message", message);
+		map.put("status", status.value());
+		map.put("data", "Id Not Found");
+		return new ResponseEntity<Object>(map,status);
+	    }
+		
+	}
+	
+	public ResponseEntity<Object> addMembers(String message,HttpStatus status,@RequestBody GroupMembers addMembers){
+		log.info("Gelen Members ID " + addMembers);
+		groupRepository.save(addMembers);
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("message", message);
+		map.put("status", status.value());
+		map.put("data", addMembers.getGmid());
+		return new ResponseEntity<Object>(map,status);
+	}
+	
 	
 	public ResponseEntity<Object> createGroup(String message, HttpStatus status,@RequestBody AgentGroup newAgentGroup){
 		agentGroupRepository.save(newAgentGroup);
@@ -117,40 +152,30 @@ public class AgentGroupServices {
 		}
 	}
 	
-	public ResponseEntity<Object> updateMembers(String message, HttpStatus status,@PathVariable Long gmid,@RequestBody GroupMembers updateMembers){
-		Optional<GroupMembers> members = groupRepository.findById(gmid);
+	public ResponseEntity<Object> deleteGroup(String message, HttpStatus status, Long agid) {
+		Optional<AgentGroup> members = agentGroupRepository.findById(agid);
 		if(members.isPresent()) {
-			GroupMembers presentMembers = members.get(); 
-			groupRepository.deleteById(presentMembers.getGmid());
-			Map<String,Object> map = new HashMap<String,Object>();
+			AgentGroup foundMembers = members.get();
+			foundMembers.setDeletionOrder(99);
+			agentGroupRepository.save(foundMembers);
+			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("message", message);
 			map.put("status", status.value());
-			map.put("deletedId", presentMembers.getGmid());
+			map.put("deleteid", foundMembers.getAGID());
 			return new ResponseEntity<Object>(map,status);
-		}else {
-			Map<String,Object> map = new HashMap<String,Object>();
+		}  else {
+			Map<String, Object> map = new HashMap<String, Object>();
 			map.put("message", message);
 			map.put("status", status.value());
-			map.put("data", "Id Not Found");
+			map.put("data","Id Not Found");
 			return new ResponseEntity<Object>(map,status);
 		}
-		
 	}
 	
-	public ResponseEntity<Object> addMembers(String message,HttpStatus status,@RequestBody GroupMembers addMembers){
-		log.info("Gelen Members ID " + addMembers);
-		groupRepository.save(addMembers);
-		Map<String,Object> map = new HashMap<String,Object>();
-		map.put("message", message);
-		map.put("status", status.value());
-		map.put("data", addMembers.getGmid());
-		return new ResponseEntity<Object>(map,status);
-	}
-	
+
 	public List<SuspendReason> getSuspends(){
 		return suspendRepository.findAll(); 
 	}
-	
 	
 	public ResponseEntity<Object> suspendAdd(String message,HttpStatus status,@RequestBody SuspendReason addSuspend){
 		Integer listOrder = suspendRepository.getListOrder();
@@ -186,6 +211,33 @@ public class AgentGroupServices {
 			return new ResponseEntity<Object>(map,status);
 		}
 	}
+
+
+	public ResponseEntity<Object> updateSuspend(String message, HttpStatus status, @PathVariable Long suspendid, @RequestBody SuspendReason updateSuspend) {
+		Optional<SuspendReason> suspend = suspendRepository.findById(suspendid);
+		Integer listOrder = suspendRepository.getListOrder();
+		if(suspend.isPresent()) {
+		SuspendReason suspendreason = suspend.get();
+		updateSuspend.setListOrder(listOrder);
+		suspendreason.setSuspendDescription(updateSuspend.getSuspendDescription());
+		updateSuspend.setIconId(99);
+		suspendRepository.save(suspendreason);
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("message", message);
+		map.put("status", status.value());
+		map.put("updateid", suspendid);
+		return new ResponseEntity<Object>(map,status);
+	}else {
+		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("message", message);
+		map.put("status", status.value());
+		map.put("data", "Id Not Found");
+		return new ResponseEntity<Object>(map,status);
+	}
+		
+	}
+
+
 	
  
 }

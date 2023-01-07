@@ -60,10 +60,21 @@ public class AgentGroupControllers {
 		return agentGroupServices.getMembers(agid);
 	}
 	
-	@PutMapping("/delete/{agid}")
+	@DeleteMapping("/delete/members/{agid}")
 	public ResponseEntity<Object> deleteGroupMembers(@PathVariable Long agid){
 		return agentGroupServices.deleteMembers("Deleted",HttpStatus.OK, agid);
 	}
+	
+	@PutMapping("/update/members/{gmid}")
+	public ResponseEntity<Object> updateGroupMembers(@PathVariable Long gmid, @RequestBody GroupMembers updateMembers){
+		return agentGroupServices.updateMembers("Updated",HttpStatus.OK,gmid,updateMembers);
+	}
+	
+	@PostMapping("/addmembers")
+	public ResponseEntity<Object> addGroupMember(@RequestBody GroupMembers addMembers){
+		return agentGroupServices.addMembers("Added",HttpStatus.OK,addMembers);
+	}
+	
 	
 	@PostMapping("/add")
 	public ResponseEntity<Object> createAgentGroup(@RequestBody AgentGroup newAgentGroup){
@@ -77,15 +88,12 @@ public class AgentGroupControllers {
 		return agentGroupServices.updateGroup("Updated",HttpStatus.OK,agid,updateGroup);
 	}
 	
-	@PutMapping("/delete/members/{gmid}")
-	public ResponseEntity<Object> updateGroupMembers(@PathVariable Long gmid, @RequestBody GroupMembers updateMembers){
-		return agentGroupServices.updateMembers("Deleted",HttpStatus.OK,gmid,updateMembers);
+	@DeleteMapping("/delete/{agid}")
+	public ResponseEntity<Object> deleteAgentGroup(@PathVariable Long agid){
+		log.info("Delete İstegi " + agid);
+		return agentGroupServices.deleteGroup("Deleted",HttpStatus.OK,agid);
 	}
 	
-	@PostMapping("/addmembers")
-	public ResponseEntity<Object> addGroupMember(@RequestBody GroupMembers addMembers){
-		return agentGroupServices.addMembers("Added",HttpStatus.OK,addMembers);
-	}
 	
 	@GetMapping("/suspendreason")
 	public List<SuspendReason> getSuspendReason(){
@@ -102,6 +110,9 @@ public class AgentGroupControllers {
 		return agentGroupServices.deleteSuspend(message,HttpStatus.OK,suspendid);
 	}
 	
- 
+	@PutMapping("/suspend/update/{suspendid}")
+	public ResponseEntity<Object> updateSuspend(@PathVariable Long suspendid, @RequestBody SuspendReason updateSuspend){
+		return agentGroupServices.updateSuspend("Updated", HttpStatus.OK, suspendid, updateSuspend);
+	}
 
 }
